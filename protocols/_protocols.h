@@ -3,6 +3,7 @@
 #include "continuity.h"
 #include "easysetup.h"
 #include "fastpair.h"
+#include "fastpair_mt.h"
 #include "lovespouse.h"
 #include "swiftpair.h"
 
@@ -24,6 +25,7 @@ struct Payload {
         ContinuityCfg continuity;
         EasysetupCfg easysetup;
         FastpairCfg fastpair;
+        Fastpair_mtCfg fastpair_mt;
         LovespouseCfg lovespouse;
         SwiftpairCfg swiftpair;
     } cfg;

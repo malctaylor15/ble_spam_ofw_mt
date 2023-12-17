@@ -317,11 +317,22 @@ static Attack attacks[] = {
                     },
             },
     },
+    {
+        .title = "Pixel Pro Popup List",
+        .text = "Bring up pixel tray",
+        .protocol = &protocol_fastpair_mt,
+        .payload =
+            {
+                .random_mac = true,
+                .cfg.fastpair_mt = {},
+            },
+    },
+
 };
 
 #define ATTACKS_COUNT ((signed)COUNT_OF(attacks))
 
-static uint16_t delays[] = {20, 50, 100, 200};
+static uint16_t delays[] = {10, 20, 50, 100, 200};
 
 typedef struct {
     Ctx ctx;
